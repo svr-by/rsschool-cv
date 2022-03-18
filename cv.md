@@ -37,3 +37,12 @@ for(i=2;i<=n;i++) {
 
 alert(message);
 ```
+
+## Education
+* BELARUSIAN-RUSSIAN UNIVERSITY 
+  * Faculty of Electrical Engineering (2004-2009) 
+  * Business Administration (correspondence course) (2008-2009) 
+
+## Languages
+* Russian (native)
+* English (A2)
