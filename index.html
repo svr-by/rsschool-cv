@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <title>Rachkouski Siarhei CV</title>
+</head>
+<body>   
+    <header class="header">
+        <div class="container header-container">
+            <nav class="nav">
+                <div class="hamburger">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#contacts" class="nav__link">Contacts</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#code" class="nav__link">Code example</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">Education</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#languages" class="nav__link">Languages</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main-container">
+            <div class="container main-container">
+                <div class="left-col">
+                    <section class="section section_avatar">
+                        <img class="avatar__img" src="assets/img/avatar.jpg" alt="photo of Siarhei">
+                        <h1 class="avatar__name">Siarhei Rachkouski</h1>
+                        <h2 class="avatar__title">Junior Front-End Developer</h2>
+                    </section>
+                    <section id="contacts" class="section">
+                        <h2 class="title">Contacts</h2>
+                        <nav class="list">
+                            <ul class="list">
+                                <li class="list__item">Location: Mogilev, Belarus</li>
+                                <li class="list__item">Phone: +375 (29) 246-18-55</li>
+                                <li class="list__item">Email: siarhei.by@gmail.com</li>
+                                <li class="list__item">Discord: Sergei(@svr-by)</li>
+                            </ul>
+                        </nav>
+                    </section>
+                    <section id="skills" class="section">
+                        <h2 class="title">Skills</h2>
+                        <nav class="list">
+                            <ul class="list">
+                                <li class="list__item">HTML & CSS</li>
+                                <li class="list__item">JavaScript</li>
+                                <li class="list__item">Git</li>
+                                <li class="list__item">Figma, Photoshop</li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+                <div class="right-col">
+                    <section id="about" class="section">
+                        <h2 class="title">About me</h2>
+                        <p>I am an engineer by education and by vocation. I have enjoyed writing code since high school. Unfortunately I haven't been working in a IT field yet. But I have gained invaluable experience in business, procurement, logistics and marketing. Undoubtedly, these skills will help me in my future career. I am attentive to details, assiduous, executive and easily trained.</p>
+                    </section>
+                    <section id="code" class="section">
+                        <h2 class="title">Code example</h2>
+                        <p>This is my first function that I wrote in Java Script. This determines the prime numbers up to the entered maximum value.</p>
+                        <pre class="code-example">
+                            <code class="code">
+        let maxValue = prompt("Input max value", 10);
+        let message = null;
+
+        for (i = 2; i &#60;= maxValue; i++) {
+            let check = 0;
+            for (j = 2; j &#60; i; j++) {
+                if (i % j == 0) {
+                check = 1;
+                }
+            }
+            if (check == 0) {
+                if (message == null) {
+                message = (i);
+                } else
+                message = (message + `, ${i}`);
+            }
+        }
+        alert(message);
+                            </code>
+                        </pre>
+                    </section>
+                    <section id="education" class="section">
+                        <h2 class="title">Education</h2>
+                        <ul class="list">
+                            <li class="list__item">BELARUSIAN-RUSSIAN UNIVERSITY</li>
+                            <li>
+                                <ul class="list list--inner">
+                                    <li class="list__item">Faculty of Electrical Engineering (2004-2009)</li>
+                                    <li class="list__item">Business Administration (correspondence course) (2008-2009)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="languages" class="section">
+                        <h2 class="title">Languages</h2>
+                        <ul  class="list">
+                            <li class="list__item">English (A2)</li>
+                            <li class="list__item">Russian (native)</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="footer__text">&#169; 2022</p>
+            <a href="https://github.com/svr-by" class="footer__link">svr-by</a>
+            <a href="https://rs.school/js/" class="footer__link footer__link--rss"></a>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
