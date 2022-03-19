@@ -139,7 +139,10 @@ ul, li, h1, h2 {
     margin-bottom: 10px;
     list-style: none;
 }
-
+.code-example {
+    background-color: rgb(230, 230, 230);
+    font-size: 14px;
+}
 /* main styles end */
 
 /* footer styles start */
