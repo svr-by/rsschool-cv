@@ -106,9 +106,9 @@ ul, li, h1, h2 {
 }
 .left-col {
     width: 35%;
+    min-height: 100vh;
     padding: 10px 30px;
     background-color: var(--color-lightgrey);
-    color: var(--color-grey)
 }
 .right-col {
     padding: 10px 30px;
@@ -263,7 +263,6 @@ ul, li, h1, h2 {
     }
     .left-col {
         background-color: #FFFFFF;
-        color: #000000;
     }
     .section_avatar {
         text-align: center;
@@ -272,4 +271,12 @@ ul, li, h1, h2 {
         max-width: 400px;
     }
 
+}
+@media (max-width: 576px) {
+    body {
+        font-size: 16px;
+    }
+    .footer__link--rss {
+        width: 90px;
+    }
 }
