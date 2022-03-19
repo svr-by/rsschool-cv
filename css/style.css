@@ -1,0 +1,93 @@
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../assets/fonts/roboto-v29-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../assets/fonts/roboto-v29-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+src: local(''),
+        url('../assets/fonts/roboto-v29-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../assets/fonts/roboto-v29-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+    --color-orange: #ecb830;
+    --color-grey: #b4b4b4;
+    --color-darkgrey: #323232;
+}
+
+* {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+body {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header styles start */
+.header-container {
+    padding: 10px 20px;
+    background-color: var(--color-grey);
+    border-radius: 0 0 5px 5px;
+}
+.nav__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    list-style: none;
+}
+.nav__link {
+    display: block;
+    margin: 0 10px;
+    line-height: 25px;
+    color: var(--color-darkgrey);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.nav__link::after {
+    display: block;
+    content: "";
+    margin: 0;
+    margin-top: 3px;
+    height: 3px;
+    width: 0px;
+    background-color: #FFFFFF;
+    transition: 0.3s;
+}
+.nav__link:hover {
+    color: #FFFFFF;
+}
+.nav__link:hover::after {
+    width: 100%;
+}
+/* header styles end */
