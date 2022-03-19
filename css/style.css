@@ -135,14 +135,20 @@ ul, li, h1, h2 {
     margin-bottom: 10px;
     border-bottom: 2px solid var(--color-orange);
 }
+.list {
+    list-style: none;
+}
+.list--inner{
+    margin-left: 20px;
+}
 .list__item {
     margin-bottom: 10px;
-    list-style: none;
 }
 .code-example {
     background-color: rgb(230, 230, 230);
     font-size: 14px;
 }
+
 /* main styles end */
 
 /* footer styles start */
@@ -170,7 +176,6 @@ ul, li, h1, h2 {
     margin-left: auto;
     width: 120px;
     height: 45px;
-    transition: .3s;
 }
 .footer__link--rss:hover {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(101%) contrast(102%);
