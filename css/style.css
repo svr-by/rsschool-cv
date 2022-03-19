@@ -102,7 +102,6 @@ ul, li, h1, h2 {
 }
 .left-col {
     width: 35%;
-    height: 100vh;
     padding: 10px 30px;
     background-color: rgb(230, 230, 230);
     color:rgb(110, 110, 110)
@@ -112,7 +111,7 @@ ul, li, h1, h2 {
     width: 65%;
 }
 
-.avatar {
+.section {
     margin-bottom: 30px;
 }
 .avatar__img {
