@@ -39,7 +39,7 @@
         <div class="container main-container">
             <div class="container main-container">
                 <div class="left-col">
-                    <section class="section">
+                    <section class="section section_avatar">
                         <img class="avatar__img" src="assets/img/avatar.jpg" alt="photo of Siarhei">
                         <h1 class="avatar__name">Siarhei Rachkouski</h1>
                         <h2 class="avatar__title">Junior Front-End Developer</h2>
@@ -76,25 +76,25 @@
                         <h2 class="title">Code example</h2>
                         <p>This is my first function that I wrote in Java Script. This determines the prime numbers up to the entered maximum value.</p>
                         <pre class="code-example">
-                            <code>
-                let maxValue = prompt("Input max value", 10);
-                let message = null;
-    
-                for (i = 2; i &#60;= maxValue; i++) {
-                    let check = 0;
-                    for (j = 2; j &#60; i; j++) {
-                        if (i % j == 0) {
-                        check = 1;
-                        }
-                    }
-                    if (check == 0) {
-                        if (message == null) {
-                        message = (i);
-                        } else
-                        message = (message + `, ${i}`);
-                    }
+                            <code class="code">
+        let maxValue = prompt("Input max value", 10);
+        let message = null;
+
+        for (i = 2; i &#60;= maxValue; i++) {
+            let check = 0;
+            for (j = 2; j &#60; i; j++) {
+                if (i % j == 0) {
+                check = 1;
                 }
-                alert(message);
+            }
+            if (check == 0) {
+                if (message == null) {
+                message = (i);
+                } else
+                message = (message + `, ${i}`);
+            }
+        }
+        alert(message);
                             </code>
                         </pre>
                     </section>
